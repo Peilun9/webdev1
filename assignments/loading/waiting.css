@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box{
+    width: 450px;
+    height: 450px;
+    background: #f52d79e5;
+    border: 1em dashed rgba(168, 239, 241, 0.979);
+
+    animation-name: funky-spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+}
+
+@keyframes funky-spin{
+    
+    from{
+        transform:rotateY(0deg) rotateX(0deg);
+    }
+
+    to{
+        transform: rotateY(405deg) rotateX(720deg);
+    }
+}
